@@ -20,6 +20,7 @@ public class FractalComponent extends JComponent {
         vectors.add(new Vector2D(-120, 450));
         vectors.add(new Vector2D(120, 450));
 
+
         /*vectors.add(new Vector2D(0, 440));
         vectors.add(new Vector2D(-100, 440));
         vectors.add(new Vector2D(100, 440));*/
@@ -50,6 +51,8 @@ public class FractalComponent extends JComponent {
         g.setColor(colors[rand.nextInt(7)]);
         g.translate(0, getHeight());  //going down is always +y and up is always -y (even though we moved origin from top left to bottom left)
 
+        long ld = 3;
+        int df = (int)ld;
         double x1 = 50;
         double y1 = getHeight() / 3 * 2;
         double x2;
